@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "prettier:check": "prettier . --check",
+    "prettier:write": "prettier . --write",
+    "test-headless": "npm test -- --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
   "dependencies": {
