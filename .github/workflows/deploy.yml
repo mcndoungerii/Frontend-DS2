@@ -42,4 +42,3 @@ jobs:
 
       - name: Run Karma tests
         run: npm test -- --watch=false --browsers=ChromeHeadless
-
