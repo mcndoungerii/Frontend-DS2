@@ -15,7 +15,7 @@ RUN npm run build --prod
 FROM nginx:alpine
 
 # Here we copy the built Angular app from the previous stage
-COPY --from=build /app/dist/frontend-ds2 /usr/share/nginx/html
+COPY --from=build /app/dist/frontend-ds2/browser /usr/share/nginx/html
 
 EXPOSE 80
 
