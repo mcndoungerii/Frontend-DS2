@@ -42,3 +42,12 @@ jobs:
 
       - name: Run Karma tests
         run: npm test -- --watch=false --browsers=ChromeHeadless
+
+      - name: Log in to Docker Hub
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build Docker image
+        run: docker build . -t ${{ secrets.DOCKER_USERNAME }}/Frontend-DS2:${{ github.sha }}
+
+      - name: Push Docker image
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/Frontend-DS2:${{ github.sha }}
