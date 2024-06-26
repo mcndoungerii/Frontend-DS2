@@ -47,7 +47,7 @@ jobs:
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build . -t ${{ secrets.DOCKER_USERNAME }}/Frontend-DS2:${{ github.sha }}
+        run: docker build . -t ${{ secrets.DOCKER_USERNAME }}/frontend-ds2:${{ github.sha }}
 
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/Frontend-DS2:${{ github.sha }}
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/frontend-ds2:${{ github.sha }}
