@@ -51,3 +51,10 @@ jobs:
 
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/frontend-ds2:${{ github.sha }}
+
+      - name: Test SSH commmands on remote server
+        uses: JimCronqvist/action-ssh@master
+        with:
+          hosts: "${{secrets.TEST_SERVER_USER}}@${{secrets.TEST_SERVER_HOST}}"
+          privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
+          command: whoami
