@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
 
+## IP for Test EC2
+
+[AWS Test Deployment Server](http://3.70.45.228/)
+
+## IP for Prod EC2
+
+[AWS Prod Deployment Server](http://3.65.2.130/)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
