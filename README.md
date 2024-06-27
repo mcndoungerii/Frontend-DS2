@@ -57,12 +57,15 @@ To pull the Docker image from the registry, run:
 ```sh
 docker pull mcndoungerii/frontend-ds2:tagname
 ```
+
 ### Run Docker Container
+
 To run a container locally from the Docker image, use:
 
 ```sh
 docker run -p 4200:4200 mcndoungerii/frontend-ds2:tagname
 ```
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
