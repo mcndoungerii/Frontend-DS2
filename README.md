@@ -58,7 +58,7 @@ To pull the Docker image from the registry, run:
 docker pull mcndoungerii/frontend-ds2:tagname
 ```
 ### Run Docker Container
-To run a container from the Docker image, use:
+To run a container locally from the Docker image, use:
 
 ```sh
 docker run -p 4200:4200 mcndoungerii/frontend-ds2:tagname
