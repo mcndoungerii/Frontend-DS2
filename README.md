@@ -30,6 +30,39 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
+## Docker Registry
+
+To use Docker with this project, follow the steps below:
+
+### Build Docker Image
+
+Run the following command to build the Docker image:
+
+```sh
+docker build -t mcndoungerii/frontend-ds2:tagname .
+```
+
+### Push Docker Image to Registry
+
+Run the following command to push the Docker image to the registry:
+
+```sh
+docker push mcndoungerii/frontend-ds2:tagname
+```
+
+### Pull Docker Image from Registry
+
+To pull the Docker image from the registry, run:
+
+```sh
+docker pull mcndoungerii/frontend-ds2:tagname
+```
+### Run Docker Container
+To run a container from the Docker image, use:
+
+```sh
+docker run -p 4200:4200 mcndoungerii/frontend-ds2:tagname
+```
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
