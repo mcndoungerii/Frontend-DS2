@@ -66,6 +66,12 @@ To run a container locally from the Docker image, use:
 docker run -p 4200:4200 mcndoungerii/frontend-ds2:tagname
 ```
 
+### Docker Image Link in Docker Hub
+
+```html
+https://hub.docker.com/r/mcndoungerii/frontend-ds2
+```
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
